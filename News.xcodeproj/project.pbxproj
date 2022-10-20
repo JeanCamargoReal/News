@@ -18,6 +18,7 @@
 		C527A6B428FC37C300B3D38B /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C527A6B328FC37C300B3D38B /* NewsModel.swift */; };
 		C527A6B728FC391600B3D38B /* NewsListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C527A6B628FC391600B3D38B /* NewsListRepository.swift */; };
 		C527A6BA28FC47D000B3D38B /* GenericDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C527A6B928FC47D000B3D38B /* GenericDataProvider.swift */; };
+		C527A6BC28FC4B8200B3D38B /* NewsListLocalDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C527A6BB28FC4B8200B3D38B /* NewsListLocalDataProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		C527A6B328FC37C300B3D38B /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
 		C527A6B628FC391600B3D38B /* NewsListRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListRepository.swift; sourceTree = "<group>"; };
 		C527A6B928FC47D000B3D38B /* GenericDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericDataProvider.swift; sourceTree = "<group>"; };
+		C527A6BB28FC4B8200B3D38B /* NewsListLocalDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListLocalDataProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,8 +118,9 @@
 		C527A6B828FC477100B3D38B /* DataProvider */ = {
 			isa = PBXGroup;
 			children = (
-				C527A6B528FC38D900B3D38B /* LocalRepository */,
 				C527A6B928FC47D000B3D38B /* GenericDataProvider.swift */,
+				C527A6BB28FC4B8200B3D38B /* NewsListLocalDataProvider.swift */,
+				C527A6B528FC38D900B3D38B /* LocalRepository */,
 			);
 			name = DataProvider;
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 				C527A69D28FB7F7600B3D38B /* ViewController.swift in Sources */,
 				C527A69928FB7F7600B3D38B /* AppDelegate.swift in Sources */,
 				C527A6B228FC372D00B3D38B /* SourceModel.swift in Sources */,
+				C527A6BC28FC4B8200B3D38B /* NewsListLocalDataProvider.swift in Sources */,
 				C527A69B28FB7F7600B3D38B /* SceneDelegate.swift in Sources */,
 				C527A6BA28FC47D000B3D38B /* GenericDataProvider.swift in Sources */,
 				C527A6B728FC391600B3D38B /* NewsListRepository.swift in Sources */,

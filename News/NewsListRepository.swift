@@ -26,8 +26,9 @@ class NewsListRepository {
                 let url = URL(fileURLWithPath: path)
                 let data = try Data(contentsOf: url, options: .mappedIfSafe)
                 let decoder = JSONDecoder()
+                decoder.dateDecodingStrategy = .formatted(DateFormatter.iso8601Full)
                 let newsModelList = try decoder.decode([NewsModel].self, from: data)
-                
+
                 completion(newsModelList, nil)
             } catch {
                 completion(nil, error)
@@ -36,4 +37,14 @@ class NewsListRepository {
             completion(nil, NewsListError.fileNotFound)
         }
     }
+}
+
+extension DateFormatter {
+    static let iso8601Full: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss"
+//                             "2022-10-14T22:37"
+        
+        return formatter
+    }()
 }
